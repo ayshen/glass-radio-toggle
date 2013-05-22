@@ -1,0 +1,6 @@
+ant.properties
+local.properties
+bin
+gen
+.*.sw*
+*.ignore.*

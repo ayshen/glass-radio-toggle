@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">RadioToggles</string>
+
+    <string name="wifi">Wi-Fi</string>
+    <string name="wifiOn">On</string>
+    <string name="wifiOff">Off</string>
+
+    <string name="bluetooth">Bluetooth</string>
+    <string name="bluetoothOn">On</string>
+    <string name="bluetoothOff">Off</string>
+</resources>
