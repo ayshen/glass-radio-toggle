@@ -2,12 +2,16 @@
 <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:stretchColumns="0"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
+    android:layout_height="fill_parent"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:paddingTop="12dp"
+    android:paddingBottom="12dp">
   <TableRow android:paddingBottom="12dp">
     <TextView android:text="@string/wifi" />
     <Switch android:id="@android:id/button1" android:textOn="@string/wifiOn" android:textOff="@string/wifiOff" />
   </TableRow>
-  <TableRow>
+  <TableRow android:paddingBottom="12dp">
     <TextView android:text="@string/bluetooth" />
     <Switch android:id="@android:id/button2" android:textOn="@string/bluetoothOn" android:textOff="@string/bluetoothOff" />
   </TableRow>

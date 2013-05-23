@@ -27,6 +27,8 @@ public class RadioTogglesActivity extends Activity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 
+        getActionBar().hide();
+
         wifiToggle = (Switch)findViewById(android.R.id.button1);
         bluetoothToggle = (Switch)findViewById(android.R.id.button2);
 
