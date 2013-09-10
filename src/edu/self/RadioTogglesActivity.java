@@ -27,7 +27,9 @@ public class RadioTogglesActivity extends Activity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 
-        getActionBar().hide();
+        // XE9: Native applications now use Theme.Holo.NoActionBar by default,
+        // so it's no longer necessary to hide it (it's null).
+        //getActionBar().hide();
 
         wifiToggle = (Switch)findViewById(android.R.id.button1);
         bluetoothToggle = (Switch)findViewById(android.R.id.button2);
