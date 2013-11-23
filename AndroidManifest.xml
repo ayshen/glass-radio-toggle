@@ -15,14 +15,57 @@
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
 
     <application android:label="@string/app_name" android:icon="@drawable/ic_launcher">
-        <activity android:name="RadioTogglesActivity"
+        <activity android:name=".RadioTogglesActivity"
                   android:label="@string/app_name">
-            <intent-filter>
-                <action android:name="com.google.glass.action.ACTION_GO_TO_SETTINGS" />
-                <category android:name="android.intent.category.DEFAULT" />
-                <!--action android:name="android.intent.action.MAIN" /-->
-                <!--category android:name="android.intent.category.LAUNCHER" /-->
-            </intent-filter>
         </activity>
+
+        <activity-alias android:name=".RadioTogglesActivity.On.Wifi"
+                        android:targetActivity=".RadioTogglesActivity">
+            <intent-filter>
+                <action android:name="com.google.android.glass.action.VOICE_TRIGGER" />
+            </intent-filter>
+            <meta-data android:name="com.google.android.glass.VoiceTrigger"
+                       android:resource="@xml/trigger_on_wf" />
+        </activity-alias>
+        <activity-alias android:name=".RadioTogglesActivity.On.Bluetooth"
+                        android:targetActivity=".RadioTogglesActivity">
+            <intent-filter>
+                <action android:name="com.google.android.glass.action.VOICE_TRIGGER" />
+            </intent-filter>
+            <meta-data android:name="com.google.android.glass.VoiceTrigger"
+                       android:resource="@xml/trigger_on_bt" />
+        </activity-alias>
+        <activity-alias android:name=".RadioTogglesActivity.On.AirplaneMode"
+                        android:targetActivity=".RadioTogglesActivity">
+            <intent-filter>
+                <action android:name="com.google.android.glass.action.VOICE_TRIGGER" />
+            </intent-filter>
+            <meta-data android:name="com.google.android.glass.VoiceTrigger"
+                       android:resource="@xml/trigger_on_air" />
+        </activity-alias>
+        <activity-alias android:name=".RadioTogglesActivity.Off.Wifi"
+                        android:targetActivity=".RadioTogglesActivity">
+            <intent-filter>
+                <action android:name="com.google.android.glass.action.VOICE_TRIGGER" />
+            </intent-filter>
+            <meta-data android:name="com.google.android.glass.VoiceTrigger"
+                       android:resource="@xml/trigger_off_wf" />
+        </activity-alias>
+        <activity-alias android:name=".RadioTogglesActivity.Off.Bluetooth"
+                        android:targetActivity=".RadioTogglesActivity">
+            <intent-filter>
+                <action android:name="com.google.android.glass.action.VOICE_TRIGGER" />
+            </intent-filter>
+            <meta-data android:name="com.google.android.glass.VoiceTrigger"
+                       android:resource="@xml/trigger_off_bt" />
+        </activity-alias>
+        <activity-alias android:name=".RadioTogglesActivity.Off.AirplaneMode"
+                        android:targetActivity=".RadioTogglesActivity">
+            <intent-filter>
+                <action android:name="com.google.android.glass.action.VOICE_TRIGGER" />
+            </intent-filter>
+            <meta-data android:name="com.google.android.glass.VoiceTrigger"
+                       android:resource="@xml/trigger_off_air" />
+        </activity-alias>
     </application>
 </manifest>

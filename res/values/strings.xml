@@ -2,11 +2,18 @@
 <resources>
     <string name="app_name">RadioToggles</string>
 
-    <string name="wifi">Wi-Fi</string>
-    <string name="wifiOn">On</string>
-    <string name="wifiOff">Off</string>
+    <string name="trigger_on_wf">enable wifi</string>
+    <string name="trigger_on_bt">enable Bluetooth</string>
+    <string name="trigger_on_air">go into airplane mode</string>
 
-    <string name="bluetooth">Bluetooth</string>
-    <string name="bluetoothOn">On</string>
-    <string name="bluetoothOff">Off</string>
+    <string name="trigger_off_wf">disable wifi</string>
+    <string name="trigger_off_bt">disable Bluetooth</string>
+    <string name="trigger_off_air">disable airplane mode</string>
+
+    <string name="target_wf">Wifi</string>
+    <string name="target_bt">Bluetooth</string>
+    <string name="target_air">Airplane mode</string>
+
+    <string name="is_off">is now off.</string>
+    <string name="is_on">is now on.</string>
 </resources>
