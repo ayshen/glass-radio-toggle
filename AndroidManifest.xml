@@ -14,27 +14,13 @@
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
 
+    <uses-permission android:name="com.google.android.glass.permission.DEVELOPMENT" />
+
     <application android:label="@string/app_name" android:icon="@drawable/ic_launcher">
         <activity android:name=".RadioTogglesActivity"
                   android:label="@string/app_name">
         </activity>
 
-        <activity-alias android:name=".RadioTogglesActivity.On.Wifi"
-                        android:targetActivity=".RadioTogglesActivity">
-            <intent-filter>
-                <action android:name="com.google.android.glass.action.VOICE_TRIGGER" />
-            </intent-filter>
-            <meta-data android:name="com.google.android.glass.VoiceTrigger"
-                       android:resource="@xml/trigger_on_wf" />
-        </activity-alias>
-        <activity-alias android:name=".RadioTogglesActivity.On.Bluetooth"
-                        android:targetActivity=".RadioTogglesActivity">
-            <intent-filter>
-                <action android:name="com.google.android.glass.action.VOICE_TRIGGER" />
-            </intent-filter>
-            <meta-data android:name="com.google.android.glass.VoiceTrigger"
-                       android:resource="@xml/trigger_on_bt" />
-        </activity-alias>
         <activity-alias android:name=".RadioTogglesActivity.On.AirplaneMode"
                         android:targetActivity=".RadioTogglesActivity">
             <intent-filter>
@@ -58,14 +44,6 @@
             </intent-filter>
             <meta-data android:name="com.google.android.glass.VoiceTrigger"
                        android:resource="@xml/trigger_off_bt" />
-        </activity-alias>
-        <activity-alias android:name=".RadioTogglesActivity.Off.AirplaneMode"
-                        android:targetActivity=".RadioTogglesActivity">
-            <intent-filter>
-                <action android:name="com.google.android.glass.action.VOICE_TRIGGER" />
-            </intent-filter>
-            <meta-data android:name="com.google.android.glass.VoiceTrigger"
-                       android:resource="@xml/trigger_off_air" />
         </activity-alias>
     </application>
 </manifest>
